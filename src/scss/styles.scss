@@ -1,0 +1,70 @@
+
+//Creates the variables which i use in multiple instances later.
+$bgColor : #b9b9b9;
+$margins: 25%;
+$radius: 50px;
+$width: 50%;
+$fontSize: 130%;
+//use of math in sass. Sets the variable to 500px multiplied by 2, or 1000px.
+$desktop: (500px * 2);
+
+//Creates the mixin which we use to adjust things later on.
+//Why can't i reference this? it should be a working function.
+@function test($color){
+    @return $color;
+}
+  
+@mixin desktop{
+    @media (max-width: #{$desktop}){
+        @content;
+    }
+}
+
+// nested properties
+body{
+    background-color: $bgColor;
+    text-align: center;
+    
+    section#games{
+        //nested selectors
+        border: 2px solid black;
+        border-radius: $radius;
+        width: $width;
+        margin-left: $margins;
+       
+
+        ul{
+            list-style-type: none;
+            font-size: $fontSize;
+            li{
+                //use of extend to give the styles from the ul to the li element
+                @extend ul;
+                // Nested media query. Changes the font color to red when the screen width is below 1000px
+                @media screen and(max-width: 1000px) {
+                    color: red;
+                }
+            }
+        }
+    }
+    section#hobbies{
+        border: 2px solid black;
+        border-radius: $radius;
+        width: $width;
+        margin-left: $margins;
+
+        ul{
+            list-style-type: none;
+            font-size: $fontSize;
+            li{
+                //use of extend to give the styles from the ul to the li element
+                @extend ul;
+                color: red;
+                
+                //Uses the mixin to change the color of the list item at a specific width
+                @include desktop{
+                    color: black;
+                }
+                }
+            }
+        }
+    }

@@ -1,0 +1,27 @@
+body {
+  background-color: #b9b9b9;
+  text-align: center; }
+  body section#games {
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 50%;
+    margin-left: 25%; }
+    body section#games ul, body section#games ul li, body section#hobbies ul section#games li {
+      list-style-type: none;
+      font-size: 130%; }
+      @media screen and (max-width: 1000px) {
+        body section#games ul li, body section#hobbies ul section#games li li {
+          color: red; } }
+  body section#hobbies {
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 50%;
+    margin-left: 25%; }
+    body section#hobbies ul, body section#games ul section#hobbies li, body section#hobbies ul li {
+      list-style-type: none;
+      font-size: 130%; }
+      body section#hobbies ul li, body section#games ul section#hobbies li li {
+        color: red; }
+        @media (max-width: 1000px) {
+          body section#hobbies ul li, body section#games ul section#hobbies li li {
+            color: black; } }
