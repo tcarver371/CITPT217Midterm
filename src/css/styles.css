@@ -2,10 +2,11 @@ iframe {
   float: right; }
 
 .jumbotron h1 {
-  text-align: center; }
+  text-align: center;
+  color: white; }
 
 .jumbotron {
-  background-color: #d15a5a; }
+  background-color: #c3c7c4; }
 
 nav ul li {
   display: inline;
@@ -14,8 +15,18 @@ nav ul li {
   margin: 20px; }
 
 .jumbotron nav {
-  float: right; }
+  text-align: center; }
 
-img {
-  height: auto;
+.responsive {
+  height: 100%;
   max-width: 100%; }
+
+.about ul li {
+  list-style-type: none;
+  font-size: 130%; }
+
+.row {
+  background-color: #aca9a9; }
+
+html {
+  background-color: #5e5a5a; }

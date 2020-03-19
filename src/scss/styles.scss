@@ -3,10 +3,12 @@ iframe{
 }
 .jumbotron h1{
     text-align: center;
+    color: white;
    
 }
 .jumbotron {
-    background-color: rgb(209, 90, 90);
+    background-color: rgb(195, 199, 196);
+
 }
 nav ul li {
     display: inline;
@@ -15,9 +17,20 @@ nav ul li {
     margin: 20px;
 }
 .jumbotron nav{
-    float: right;
+    text-align: center;
 }
-img{
-    height: auto;
+.responsive{
+    height: 100%;
     max-width: 100%;
+    
+}
+.about ul li{
+    list-style-type: none;
+    font-size: 130%;
+}
+.row{
+    background-color:rgb(172, 169, 169)
+}
+html{
+    background-color: rgb(94, 90, 90);
 }
