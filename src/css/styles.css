@@ -1,5 +1,5 @@
 iframe {
-  float: right; }
+  height: 100%; }
 
 .jumbotron h1 {
   text-align: center;
@@ -30,3 +30,6 @@ nav ul li {
 
 html {
   background-color: #5e5a5a; }
+
+.menu {
+  height: 400px; }
