@@ -2,10 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Wiener Works Remade">
+    <meta name="keywords" content="Wiener Works,Hot Dogs,Burgers">
+    <meta name="author" content="Trevor Carver">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wiener Works</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <div class="row">
+    <div class="col-sm-12">
+        <header class="jumbotron">
+            <h1>Weiner Works</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Photo Gallery</a></li>
+                </ul>
+            </nav>
+                <img src="assets/images/logo.jpg" alt="wiener works logo" width= "400" height="300" class="responsive">
+        
+            <h1 class="text-center">Our Lovely Items</h1>
+            </header>
+    </div>
+    <!--Image Carousel-->
+    <div class="col-sm-12">
+        <div id="foodImages" class="carousel slide" data-ride="carousel">
+
+         
+            <ul class="carousel-indicators">
+              <li data-target="#foodImages" data-slide-to="0" class="active"></li>
+              <li data-target="#foodImages" data-slide-to="1"></li>
+              <li data-target="#foodImages" data-slide-to="2"></li>
+              <li data-target="#foodImages" data-slide-to="3"></li>
+              <li data-target="#foodImages" data-slide-to="4"></li>
+            </ul>
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/images/burger.jpg" alt="Cheese Burger" class="responsive">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/chilidog.jpg" alt="Chili Dog" class="responsive">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/fries.jpg" alt="French Fries" class="responsive">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/hotdog.jpg" alt="Hot Dog" class="responsive">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/pints.jpg" alt="Pints of Beer" class="responsive">
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#foodImages" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#foodImages" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          
+          </div>
+    </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

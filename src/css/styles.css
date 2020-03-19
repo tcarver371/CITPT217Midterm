@@ -33,3 +33,6 @@ html {
 
 .menu {
   height: 400px; }
+
+#foodImages img {
+  width: 100%; }
